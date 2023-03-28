@@ -14,7 +14,7 @@ namespace BigSchool_NguyenAnThinh.Models
     public class ApplicationUser : IdentityUser
     {
         [Required]
-        [StringLength(150)]
+        [StringLength(255)]
         public string Name { get; set; }
 
         public ICollection<Following> Followers { get; set; }
